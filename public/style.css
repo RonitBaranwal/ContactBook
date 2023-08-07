@@ -3,12 +3,15 @@
   margin: 0px;
   padding: 0px;
 }
-
+input{
+  font-size: 20px;
+}
 body{
   display: flex;
   background-color:  #f9616696;
   justify-content: center;
   align-items: center;
+  flex-flow: column;
 }
 .container{
   background-color: #f9e795;
@@ -32,3 +35,19 @@ input{
   margin-left: 20px;
   border-bottom: 2px solid black;
 }
+#submit{
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  /* transform: scale(2.02); */
+}
+#submit:hover{
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+#getdetails{
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+}
+

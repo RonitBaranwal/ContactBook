@@ -7,7 +7,7 @@
             content="width=device-width, initial-scale=1.0"
         />
         <title>Welcome to Contact Book</title>
-        <script src="script.js"></script>
+        <script src="script.js" defer></script>
         <link
             rel="stylesheet"
             href="style.css"
@@ -15,7 +15,6 @@
     </head>
     <body>
         <div class="container">
-          
             <div class="contact">
                 <label
                     >Contact Number:
@@ -24,6 +23,8 @@
                         id="contacttxt"
                         placeholder="1234567890"
                         required
+                        minlength="10"
+                        maxlength="10"
                 /></label>
             </div>
             <div class="name">
@@ -67,12 +68,18 @@
                             placeholder="example@gmail.com"
                     /></label>
                 </div>
-                <div class="sub">
-                    <button id="submit">
-                        Confirm Details
-                    </button>
-                </div>
+                
             </div>
+        </div>
+        <div class="sub">
+            <button id="submit">
+                Confirm Details
+            </button>
+            <a href="getDetails.html">
+            <button id="getdetails">
+                Get Details
+            </button>
+        </a>
         </div>
     </body>
 </html>
